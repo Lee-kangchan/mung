@@ -1,0 +1,13 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: <YOUR_AUTH_SERVER_ISSUER_URI>
+          jwk-set-uri: <YOUR_AUTH_SERVER_JWK_SET_URI>
+      client:
+        registration:
+          <YOUR_CLIENT_REGISTRATION_ID>:
+            client-id: <YOUR_CLIENT_ID>
+            client-secret: <YOUR_CLIENT_SECRET>
+            redirect-uri: <YOUR_REDIRECT_URI>
